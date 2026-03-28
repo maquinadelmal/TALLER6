@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="portafolio,UX,UI,Diseño gráfico">
+    <meta name="description" content="Soy experto en Diseño UX/UI y este es mi portafolio digital">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    
+    <title>Portafolio</title>
+</head>
+
+<body>
+    <!-- hola soy un comentario  -->
+    <!-- Definición del header:
+     etiqueta semántica que le dice a los motores de búsqueda
+     que ésta es la cabecera del documento.
+     la etiqueta header siempre dentro del body.
+     Las etiquetas semánticas no son obligatorias;pero son
+     importantes para el SEO -->
+    <header class="sticky-top">
+        <!--se define la etiqueta nav: navegación
+        navbar: define un una barra de navegación
+        navbar-expand-lg: expander el ancho del navbar en
+        dispositivos de pantallas grandes
+        navbar-light: establece un modo claro en Boostrap
+        bg-light: establece un fondo de color azulado
+        shadow-sm: establece una leve sobra al menu
+
+        -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-nav shadow-sm">
+            <div class="container-fluid"> <!--división que se da en HTML-->
+                <!--a: anchor/ancla será la pieza clave dentro
+                de HTML para generar hipervinculos
+                href: Hypertext Reference(Referencia de Hipertexto)
+                navbar-brand: clase para definir una marca
+                d-flex: incorpora flexbox que es un sistema
+                que permite ordenar automáticamente los elementos
+                internos basados en un criterio
+                align-items-center: permite centrar verticalmente
+                los elementos-> la idea es que si por ejemplo
+                el logo estuviese mas arriba que el texto, ambos 
+                se nivelen centrados.
+                d-inline-block: establece el tratamiento de la imagen
+                como si fuese una linea
+                align-text-top: permitirá que la imagen sea posicionada en la parte superior del ancla(a)
+                me-2(margin-end): establece un margen a la derecha
+                definido en la escala de bootstrap en rem
+                -->
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="https://placehold.co/50x50" alt="Logo" width="50" height="50" class="d-inline-block
+                     align-text-top me-2">
+                    <div class="d-flex flex-column">
+                        <span class="blanco">Portafolio</span> <!-- trabaja el contenido como una linea -->
+                        <small class="blanco">Tu idea
+                            innovadora</small><!-- el tamaño estandar que viene dado por el p:parrafo lo reduce un poco más-->
+                    </div>
+                </a>
+
+                <!-- crear boton sandwich -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- fin boton sandwich-->
+                <!-- collapse: va a ocultar algo 
+                  hasta que una acción le permita mostrarse
+                  navbar-collapse: permitirá dar un formato
+                  al menu cuando se despliegue
+                  navbar-nav: elimina viñetas y dispone de forma
+                  horizontal el menu
+                  ms-auto: toma el margen disponible automático 
+                  a izquierda y lo adapta al anocho disponible
+                  -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto"><!--ul: unordered list-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Inicio
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Sobre mí
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Proyectos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Habilidades
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Contacto
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!--Inicia la sección sobre mí
+        padding-top: 3rem->48px (laptop);
+        paddint-bottom:3rem;
+        mb-4-> margin-botton:1.5 rem (solo se aplicará
+        a pantallas de tamaño inferior a las medium devices)
+        mb-md-0: aplica un margin-botton: 0 desde del ancho
+        de las medium devices
+        align-items-center-> permite centrar verticalmente 
+        un contenido
+        justify-content-center-> permite centrar horizontalmente
+        un contenido
+        -->
+        <section class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center mb-4 mb-md-0">
+                    <!-- 
+                    ratio-1x1: estoy forzando a que el contenedor
+                    tenga una proporcion de 1x1 donde esto se 
+                    verá reflejado en un cuadro
+                    style establece un css personalizado al div
+                    max-width el maximo ancho 
+                    margin: 0 auto; 0 en el el margen superior e inferior,
+                    automatico en los margenes izquierdo y derecho
+                    img-fluid: permitirá escalamiento responsivo automático
+                    de una imagen
+                    rounded: redondea los bordes de la imagen
+                    border: crea un borde
+                    border-dark: borde de gris oscuro
+                    object-fit-cover: impedirá que la imagen se deforme
+                    dentro del div principal
+                    -->
+                    <div class="ratio ratio-1x1 d-flex align-items-center 
+                    justify-content-center" style="max-width: 350px;
+                    margin: 0 auto;">
+                    <img src="https://placehold.co/400" alt="quien soy yo"
+                    class="img-fluid rounded border border-dark 
+                    object-fit-cover">
+
+                    </div>
+
+                </div>
+                <div class="col-md-8">
+                    <!-- 
+                    fw-bold-> font-weight:bold-> letra en negrita
+                    
+                    -->
+
+                   
+                    <h2 class="fw-bold mb-3">Sobre mí</h2>
+                    <p  style="text-align: justify;">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi numquam ad asperiores sed non, doloribus, aliquam laboriosam nostrum nulla quis eveniet. Praesentium reprehenderit quisquam rerum iste quo, consequatur labore fuga!
+
+                    </p>
+                    <p style="text-align: justify;">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod nesciunt iure, nisi atque deserunt quae nulla laboriosam ducimus molestias aut, dignissimos soluta! Error similique velit repellat vero suscipit doloribus explicabo!
+
+                    </p>
+                    <!--target="_blank" permite que al clikear
+                    el nuevo vinculo se abra en una pestaña nueva
+                    del navegador
+                    btn: boton
+                    btn-dark: boton plomo muy oscuro
+                    rounded-pill: permite redondear el boton
+                    de tal forma que se va como una pildora
+                    px: padding en el x
+                    se refiere en css padding-left , padding-right
+                    mt: margen superior-->
+                    <a href="#" target="_blank"
+                    class="btn btn-dark rounded-pill px-5
+                    py-2 mt-3 mb-5">
+                    VER CV
+                    </a>
+
+                </div>
+
+            </div>
+            <!-- se inician los badges(etiquetas) de las 
+             competencias
+             flex-wrap: envolver todo el contenido interior
+             pero en la practica lo que hace es que si un contenido
+             no es capaz de estar en la misma linea, lo pasará automatica a la siguiente respetando el espaciado
+             gap-2(0.5 rem): establecer un espaciado entre los elementos
+             (columnas de 2) -->
+             <div class="row mt-4">
+                <div class="col-12 d-flex flex-wrap gap-2">
+                    <span class="badge border text-dark rounded-pill
+                    px-4 py-2 fw-normal badge-size">
+                        Diseño UX
+                    </span>
+                    <span class="badge border text-dark rounded-pill
+                    px-4 py-2 fw-normal badge-size">
+                        Diseño UI
+                    </span>
+                    <span class="badge border text-dark rounded-pill
+                    px-4 py-2 fw-normal badge-size">
+                        Web
+                    </span>
+                    <span class="badge border text-dark rounded-pill
+                    px-4 py-2 fw-normal badge-size">
+                        SEO
+                    </span>
+                    <span class="badge border text-dark rounded-pill
+                    px-4 py-2 fw-normal badge-size">
+                        Fullstack
+                    </span>
+                    <span class="badge border text-dark rounded-pill
+                    px-4 py-2 fw-normal badge-size">
+                        Gestión de proyectos
+                    </span>
+
+                </div>
+
+             </div>
+
+
+        </section>
+
+        <!--Finaliza la sección sobre mí-->
+        <!--Inicia la sección proyectos-->
+    
+        <section class="container py-5">
+            <h2 class="fw-bold mb-4">Proyectos</h2>
+            <!--g-4 genera un espaciado entre una columna
+            y otra-->
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <!--border-secondary-subtle: establece un color
+                    gris claro
+                    overflow-hidden: desparrame escondido del eje x e y es decir permite que el posible scroll en el x e y
+                    se oculte
+                    w-100: ancho del 100%
+                    h-100: ancho del-->
+                    <div class="card h-100 border-secondary-subtle
+                    shadow-sm overflow-hidden card-border-radius">
+                    <div style="height: 200px;overflow: hidden;">
+                        <img src="https://placehold.co/300" alt=""
+                        class="w-100 h-100 object-fit-cover">
+
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Nombre proyecto</h5>
+                        <p class="card-text text-secondary small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab totam odio facere atque accusantium quisquam aliquid mollitia magni quam consectetur, cumque, harum explicabo vitae architecto odit nesciunt, fuga culpa ratione.</p>
+                        <div class="mt-auto text-end">
+                            <a href="#" class="btn btn-outline-dark rounded-3 px-3 py-1">Ver más</a>
+                        </div>
+
+                    </div>
+
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <!--border-secondary-subtle: establece un color
+                    gris claro
+                    overflow-hidden: desparrame escondido del eje x e y es decir permite que el posible scroll en el x e y
+                    se oculte
+                    w-100: ancho del 100%
+                    h-100: ancho del-->
+                    <div class="card h-100 border-secondary-subtle
+                    shadow-sm overflow-hidden card-border-radius">
+                    <div style="height: 200px;overflow: hidden;">
+                        <img src="https://placehold.co/300" alt=""
+                        class="w-100 h-100 object-fit-cover">
+
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Nombre proyecto</h5>
+                        <p class="card-text text-secondary small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab totam odio facere atque accusantium quisquam aliquid mollitia magni quam consectetur, cumque, harum explicabo vitae architecto odit nesciunt, fuga culpa ratione.</p>
+                        <div class="mt-auto text-end">
+                            <a href="#" class="btn btn-outline-dark rounded-3 px-3 py-1">Ver más</a>
+                        </div>
+
+                    </div>
+
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <!--border-secondary-subtle: establece un color
+                    gris claro
+                    overflow-hidden: desparrame escondido del eje x e y es decir permite que el posible scroll en el x e y
+                    se oculte
+                    w-100: ancho del 100%
+                    h-100: ancho del-->
+                    <div class="card h-100 border-secondary-subtle
+                    shadow-sm overflow-hidden card-border-radius">
+                    <div style="height: 200px;overflow: hidden;">
+                        <img src="https://placehold.co/300" alt=""
+                        class="w-100 h-100 object-fit-cover">
+
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Nombre proyecto</h5>
+                        <p class="card-text text-secondary small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab totam odio facere atque accusantium quisquam aliquid mollitia magni quam consectetur, cumque, harum explicabo vitae architecto odit nesciunt, fuga culpa ratione.</p>
+                        <div class="mt-auto text-end">
+                            <a href="#" class="btn btn-outline-dark rounded-3 px-3 py-1">Ver más</a>
+                        </div>
+
+                    </div>
+
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <!--border-secondary-subtle: establece un color
+                    gris claro
+                    overflow-hidden: desparrame escondido del eje x e y es decir permite que el posible scroll en el x e y
+                    se oculte
+                    w-100: ancho del 100%
+                    h-100: ancho del-->
+                    <div class="card h-100 border-secondary-subtle
+                    shadow-sm overflow-hidden card-border-radius">
+                    <div style="height: 200px;overflow: hidden;">
+                        <img src="https://placehold.co/300" alt=""
+                        class="w-100 h-100 object-fit-cover">
+
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Nombre proyecto</h5>
+                        <p class="card-text text-secondary small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab totam odio facere atque accusantium quisquam aliquid mollitia magni quam consectetur, cumque, harum explicabo vitae architecto odit nesciunt, fuga culpa ratione.</p>
+                        <div class="mt-auto text-end">
+                            <a href="#" class="btn btn-outline-dark rounded-3 px-3 py-1">Ver más</a>
+                        </div>
+
+                    </div>
+
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <!--border-secondary-subtle: establece un color
+                    gris claro
+                    overflow-hidden: desparrame escondido del eje x e y es decir permite que el posible scroll en el x e y
+                    se oculte
+                    w-100: ancho del 100%
+                    h-100: ancho del-->
+                    <div class="card h-100 border-secondary-subtle
+                    shadow-sm overflow-hidden card-border-radius">
+                    <div style="height: 200px;overflow: hidden;">
+                        <img src="https://placehold.co/300" alt=""
+                        class="w-100 h-100 object-fit-cover">
+
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Nombre proyecto</h5>
+                        <p class="card-text text-secondary small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab totam odio facere atque accusantium quisquam aliquid mollitia magni quam consectetur, cumque, harum explicabo vitae architecto odit nesciunt, fuga culpa ratione.</p>
+                        <div class="mt-auto text-end">
+                            <a href="#" class="btn btn-outline-dark rounded-3 px-3 py-1">Ver más</a>
+                        </div>
+
+                    </div>
+
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <!--border-secondary-subtle: establece un color
+                    gris claro
+                    overflow-hidden: desparrame escondido del eje x e y es decir permite que el posible scroll en el x e y
+                    se oculte
+                    w-100: ancho del 100%
+                    h-100: ancho del-->
+                    <div class="card h-100 border-secondary-subtle
+                    shadow-sm overflow-hidden card-border-radius">
+                    <div style="height: 200px;overflow: hidden;">
+                        <img src="https://placehold.co/300" alt=""
+                        class="w-100 h-100 object-fit-cover">
+
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Nombre proyecto</h5>
+                        <p class="card-text text-secondary small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab totam odio facere atque accusantium quisquam aliquid mollitia magni quam consectetur, cumque, harum explicabo vitae architecto odit nesciunt, fuga culpa ratione.</p>
+                        <div class="mt-auto text-end">
+                            <a href="#" class="btn btn-outline-dark rounded-3 px-3 py-1">Ver más</a>
+                        </div>
+
+                    </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+         <!--Fin sección proyectos-->
+         <!--Inicio sección Habilidades-->
+         <section class="container py-5">
+            <h2 class="fw-bold mb-5">Habilidades</h2>
+            <div  class="carousel slide" id="carouselSkills" data-bs-ride="carousel">
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <!-- 
+                        row-cols-1 que por defecto
+                        en dispositivos moviles utilizará una columna
+                        row-cols-md-3
+                        row-cols-md-3: desde las pantallas de tipo md
+                        (tablets en adelante) la cantidad de columnas
+                        por fila será 3
+                        -->
+                        <div class="row row-cols-1
+                        row-cols-md-3 g-4 justify-content-center">
+                        <div class="col d-flex justify-content-center">
+                            <div class="card h-100 border border-dark
+                            rounded-3 d-flex align-items-center justify-content-center p-4 text-center"
+                            style="aspect-ratio: 1/1; max-width: 250px;width: 100%;">
+                            <img src="assets/img/figma.svg" 
+                            alt="Logo de Figma"
+                            class="img-fluid"
+                            style="max-height:80px ;
+                            width: auto;">
+
+                            </div>
+
+                        </div>
+                        <div class="col d-flex justify-content-center">
+                            <div class="card h-100 border border-dark
+                            rounded-3 d-flex align-items-center justify-content-center p-4 text-center"
+                            style="aspect-ratio: 1/1; max-width: 250px;width: 100%;">
+                            <img src="assets/img/html.svg" 
+                            alt="Logo de Figma"
+                            class="img-fluid"
+                            style="max-height:80px ;
+                            width: auto;">
+
+                            </div>
+
+                        </div>
+                        <div class="col d-flex justify-content-center">
+                            <div class="card h-100 border border-dark
+                            rounded-3 d-flex align-items-center justify-content-center p-4 text-center"
+                            style="aspect-ratio: 1/1; max-width: 250px;width: 100%;">
+                            <img src="assets/img/css.svg" 
+                            alt="Logo de Figma"
+                            class="img-fluid"
+                            style="max-height:80px ;
+                            width: auto;">
+
+                            </div>
+
+                        </div>
+                        
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <!-- 
+                        row-cols-1 que por defecto
+                        en dispositivos moviles utilizará una columna
+                        row-cols-md-3
+                        row-cols-md-3: desde las pantallas de tipo md
+                        (tablets en adelante) la cantidad de columnas
+                        por fila será 3
+                        -->
+                        <div class="row row-cols-1
+                        row-cols-md-3 g-4 justify-content-center">
+                        <div class="col d-flex justify-content-center">
+                            <div class="card h-100 border border-dark
+                            rounded-3 d-flex align-items-center justify-content-center p-4 text-center"
+                            style="aspect-ratio: 1/1; max-width: 250px;width: 100%;">
+                            <img src="assets/img/github.svg" 
+                            alt="Logo de Github"
+                            class="img-fluid"
+                            style="max-height:80px ;
+                            width: auto;">
+
+                            </div>
+
+                        </div>
+                        <div class="col d-flex justify-content-center">
+                            <div class="card h-100 border border-dark
+                            rounded-3 d-flex align-items-center justify-content-center p-4 text-center"
+                            style="aspect-ratio: 1/1; max-width: 250px;width: 100%;">
+                            <img src="assets/img/google-drive.svg" 
+                            alt="Logo de Google Drive"
+                            class="img-fluid"
+                            style="max-height:80px ;
+                            width: auto;">
+
+                            </div>
+
+                        </div>
+                        <div class="col d-flex justify-content-center">
+                            <div class="card h-100 border border-dark
+                            rounded-3 d-flex align-items-center justify-content-center p-4 text-center"
+                            style="aspect-ratio: 1/1; max-width: 250px;width: 100%;">
+                            <img src="assets/img/visual-studio-code.svg" 
+                            alt="Logo de Visual Studio Code"
+                            class="img-fluid"
+                            style="max-height:80px ;
+                            width: auto;">
+
+                            </div>
+
+                        </div>
+                        
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <!--botones-->
+                <button class="carousel-control-prev custom-carousel-btn"
+                type="button" data-bs-target="#carouselSkills"
+                data-bs-slide="prev">
+                <div class="control-box">
+                    <span class="carousel-control-prev-icon"></span>
+
+                </div>
+                <span class="visually-hidden">Atras</span>
+
+                </button>
+
+                <button class="carousel-control-next custom-carousel-btn"
+                type="button" data-bs-target="#carouselSkills"
+                data-bs-slide="next">
+                <div class="control-box">
+                    <span class="carousel-control-next-icon"></span>
+                </div>
+                <span class="visually-hidden">Siguiente</span>
+
+                </button>
+
+
+            </div>
+
+         </section>
+         <!-- Fin sección habilidades-->
+
+         <!--Comienza la sección Conversemos-->
+         <section class="container py-5">
+            <h2 class="text-center fw-bold mb-5 mt-4">
+                Conversemos y creemos algo asombroso
+            </h2>
+            <div class="row align-items-start gx-5">
+                <div class="col-md-5 mb-4 mb-md-0">
+                    <div class="border border-dark d-flex align-items-center
+                    justify-content-center bg-light"
+                    style="aspect-ratio: 1/1; width: 100%;max-width: 450px;
+                    margin: 0 auto; overflow: hidden;">
+                    <img src="https://placehold.co/400" alt="Fotografía contacto"
+                    class="img-fluid w-100 h-100 object-fit-cover">
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-7">
+                    <form>
+                        <div class="row">
+                            <div class="col-sm-6 mb-3">
+                                <label class="form-label fw-bold small">
+                                    Nombre:
+                                </label>
+                                <input type="text" class="form-control bg-light border-0 py-2" placeholder="Mi nombre">
+
+                            </div>
+                            <div class="col-sm-6 mb-3">
+                                <label class="form-label fw-bold small">
+                                    Correo:
+                                </label>
+                                <input type="email" class="form-control bg-light border-0 py-2" placeholder="usuario@mail.com">
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-bold small">
+                                    Asunto:
+                                </label>
+                                <input type="text" class="form-control bg-light border-0 py-2" placeholder="Ingrese asunto">
+
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-bold small">
+                                    Mensaje:
+                                </label>
+                                <textarea class="form-control bg-light border-0 py-2"
+                                rows="4" placeholder="Cuentame más">
+
+                                </textarea>
+
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-outline-dark 
+                            rounded-pill px-5 py-2 fw-bold w-100 shadow-sm" style="max-width: 300px;">
+                                ENVIAR
+                            </button>
+                        </div>
+
+                        
+
+                    </form>
+                </div>
+
+            </div>
+
+         </section>
+         <!--Fin de la sección Conversemos-->
+
+    </main>
+    <footer class="container py-5 border-top">
+        <div class="row align-items-center"> 
+        <!--text-md-start: establece los textos a la izquierda desde 
+        las medium devices en adelante(desde las tablets en adelante)
+        mb-md-0 : establece que no hay margen inferior para las medium devices-->
+        <div class="col-md-8 text-center text-md-start mb-4 mb-md-0">
+            <h3 class="fw-bold mb-1">De Chile pal mundo</h3>
+            <p>Pepe Tapia Designs International &copy;</p>
+
+        </div>
+        <div class="col-md-4 text-center text-md-end">
+            <div class="d-flex justify-content-center justify-content-md-end gap-3">
+                <!--fs: font-size-->
+                <a href="#" target="_blank" class="text-dark fs-4">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="#" target="_blank" class="text-dark fs-4">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="#" target="_blank" class="text-dark fs-4">
+                    <i class="bi bi-globe"></i>                
+                </a>
+
+            </div>
+
+        </div>
+        </div>
+
+
+    </footer>
+
+
+</body>
+
+</html>

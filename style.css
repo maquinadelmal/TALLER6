@@ -1,0 +1,84 @@
+/** Estilos de secciones **/
+body{
+    background-color: #93a8ac !important;
+}
+
+.dark-blue{
+    background: #060622;
+}
+
+
+.nav-link{
+    color: #F2F2F2;
+}
+.nav-link:hover{
+    color: #4f46e5;
+}
+
+/* Heading styles - Minor Third- */
+h2,h3,h5{
+    font-family: 'Noto Sans' !important;
+}
+
+h1{
+    font-size: 2.986rem;
+    color:#F25041 !important;
+}
+h2{font-size: 2.488rem; }
+h3{font-size: 2.074rem;}
+h4{font-size: 1.728rem;}
+h5{font-size: 1.44rem;}
+h6{font-size: 1.2rem;}
+p{
+    font-size: 1rem;
+    font-family: 'Sora' !important;
+}
+small{font-size: 0.833rem;}
+
+/* acento palabras */
+.faccent{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.titulo{
+    font-size: 18px;
+}
+
+.badge-size{
+    font-size: 0.8rem;
+}
+
+.card-border-radius {
+    border-radius: 12px;
+}
+
+.custom-carousel-btn{
+    width: 60px;
+    opacity: 1;
+}
+.control-box{
+    background-color: white;
+    border: 1px solid #F2F2F2;
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.control-box:hover{
+    background-color: #080A0D;
+
+}
+
+.carousel-control-prev-icon,.carousel-control-next-icon{
+    filter: invert(1) grayscale(100%) brightness(0); /* parametros invert 0 (nada) - 1 (invierte) */
+    height: 25px;
+    width: 25px;
+}
+
+ 
+
