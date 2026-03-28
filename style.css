@@ -3,16 +3,37 @@ body{
     background-color: #93a8ac !important;
 }
 
-.dark-blue{
-    background: #060622;
+
+.bg-nav{
+    background-color: #060622;
 }
 
+.bg-footer{
+    background-color: #060622;
+    color: #93a8ac;
+}
+
+.blanco{
+    color: white;
+}
 
 .nav-link{
-    color: #F2F2F2;
+    color: white !important;
 }
+
 .nav-link:hover{
+    color: #4f46e5 !important;
+}
+.bi{
     color: #4f46e5;
+}
+.bi:hover{
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.badge{
+    background-color: #53FF8A !important;
 }
 
 /* Heading styles - Minor Third- */
@@ -53,31 +74,36 @@ small{font-size: 0.833rem;}
     border-radius: 12px;
 }
 
-.custom-carousel-btn{
-    width: 60px;
-    opacity: 1;
+/* Contenedor del botón para que no ocupe toda la altura */
+.custom-carousel-btn {
+    width: 60px; /* Ajusta el ancho del área de clic */
+    opacity: 1;  /* Para que no se vea semitransparente */
 }
-.control-box{
-    background-color: white;
-    border: 1px solid #F2F2F2;
-    border-radius: 8px;
+
+/* La caja blanca con borde y sombra */
+.control-box {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6; /* Borde sutil gris */
+    border-radius: 8px;        /* Bordes redondeados */
     padding: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease; /*es una transición->animación*/
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.control-box:hover{
-    background-color: #080A0D;
-
+/* Cambiar el color de la flecha de blanco a negro */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1) grayscale(100%) brightness(0);
+    width: 25px;
+    height: 25px;
 }
 
-.carousel-control-prev-icon,.carousel-control-next-icon{
-    filter: invert(1) grayscale(100%) brightness(0); /* parametros invert 0 (nada) - 1 (invierte) */
-    height: 25px;
-    width: 25px;
+.control-box:hover{
+    background-color: #f8f9fa;
+    border: #000;
 }
 
  
